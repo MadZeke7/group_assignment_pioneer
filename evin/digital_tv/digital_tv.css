@@ -31,6 +31,16 @@ header{
     font-size: 0.8rem;
 }
 
+.icon{
+    font-family: 'Icofont';
+    color:var(--light-green);
+    padding: 4px;
+}
+
+.icon-black{
+    color:black;
+}
+
 /* Sticky section up top */
 
 #sticky-bar{
@@ -76,12 +86,6 @@ header{
     color: white;
 }
 
-
-.icon{
-    font-family: 'Icofont';
-    color:var(--light-green);
-    padding: 4px;
-}
 
 a{
     text-decoration: none;
@@ -135,7 +139,7 @@ a{
 
 #banner{
     background-color: var(--dark-green);
-    padding: 50px 30px;
+    padding: 70px 30px;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -154,8 +158,7 @@ a{
 /* Main Body */
 
 #main-body{
-    padding: 50px 150px;
-    margin-bottom: 50px;
+    padding-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -164,10 +167,7 @@ a{
 
 #main-body .navigator{
     align-self: flex-start;
-}
-
-#main-body .sub-text{
-    text-align: center;
+    padding-left:150px;
 }
 
 #title{
@@ -192,29 +192,285 @@ a{
     bottom:14px;
 }
 
-.sub-image{
-    height: 200px;
+/* Section 1 - Delivery Features */
+
+#delivery-feature-grid{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
-#image-holder{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 100px;
-}
-
-.image-holder-child{
-    border:1px solid rgb(152, 149, 154);
+#delivery-feature-grid .feature-item{
+    width:370px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgb(197, 204, 223);
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap:15px;
-    padding-bottom: 15px;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.image-holder-child .content{
+#delivery-features .sub-text{
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(89, 87, 87, 0.8);
+    margin: 50px 0;
+}
+
+#delivery-features img{
+    width:80px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 45px;
+}
+
+
+/* Section 2 - Smart TV */
+
+#smart-tv{
+    background-color: #f9f9fa;
+    width:100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color:#3a3a3a;
+    padding-top:30px;
+    padding-bottom:50px;
+}
+
+#smart-tv-feature-grid{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    padding-top: 80px;
+}
+
+#smart-tv-feature-grid .feature-item{
+    width:370px;
+    background-color: white;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap:5px;
+    text-align: center;
+    align-items: center;
+    gap:10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#smart-tv p{
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Section 3 - Benefits to subscribers */
+
+#subscriber-benefits{
+    padding-top:50px;
+    padding-bottom: 30px;
+    display: flex;
+    gap:50px;
+}
+
+#subscriber-benefits h3{
+    font-family: 'Raleway',sans-serif;
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+}
+
+#subscriber-benefits img{
+    height:300px;
+}
+
+#subscriber-benefits ul{
+    list-style-type: none;
+    margin-left:10px;
+}
+
+#subscriber-benefits li{
+    margin-bottom: 9px;
+}
+
+/* Section 4 - TV Advantages */
+
+#tv-advantages{
+    background-color: #f9f9fa;
+    padding-top: 40px;  
+    text-align: center;
+    width:100%;
+}
+
+#tv-advantages #advantages-grid{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 70px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+        "cont cont cont"
+        "cont cont cont";
+    grid-template-columns: 0.25fr 0.25fr 0.25fr;
+    grid-gap:30px;
+}
+
+#tv-advantages .advantage{
+    background-color: white;
+    /* width:400px; */
+    padding: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 2px 2px 20px rgba(146, 147, 150, 0.3);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    text-align: left;
+}
+
+#tv-advantages .advantage img{
+    align-self: center;
+}
+
+/* Section 4 - Android Box */
+
+#android-box{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#android-box #android-image{
+    width: 450px;
+}
+
+#android-features{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+#android-features-grid{
+    display:grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-gap:30px;
+}
+
+#android-features-grid .feature{
+    box-shadow: 2px 2px 20px rgba(146, 147, 150, 0.3);
+    border-radius: 13px;
+    width:240px;
+    height: 200px;
+    padding: 34px 30px;
+    text-align: center;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+#android-features-grid .sub-text{
+    color:#6c757d;
+    font-size: 0.94rem;
+}
+
+#android-features-grid img{
+    align-self: center;
+}
+
+
+/* Section 5 - Smart TV for Smart Audiences */
+
+#smart-audiences{
+    font-family: "Raleway", sans-serif;
+    background-color: #f9f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    width:100%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+#smart-audience-grid{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 50px;
+}
+
+#smart-audience-grid .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#smart-audience-grid .feature img{
+    height:180px;
+}
+
+/* Section 6 - Request Form */
+#request-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+#request-form #modal-open{
+    padding: 10px 30px;
+    background-color: var(--light-green);
+    color:white;
+    border:0;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+/* Section 7 - Customer Support */
+
+#customer-support{
+    width:100%;
+    padding: 100px 0;
+    background: radial-gradient(ellipse at center, rgba(210, 255, 82, 0.75), rgba(85, 189, 7, 0.93)), url("https://pioneeronline.com/assets/img/spacer/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:200px;
+}
+
+#customer-support h1{
+    font-size: 2rem;
+}
+
+#customer-image-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#customer-support-info p{
+    margin:18px;
 }
 
 /* Footer */

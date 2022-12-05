@@ -1,0 +1,318 @@
+@media only screen and (max-width: 760px) {
+
+  .div-form{
+    width: 75% !important; 
+  }
+
+  .div-form-chkbox{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 60px;
+  }
+
+  .second-section p{
+    padding: 30px 30px;
+    text-align: justify;
+    width: 50%;
+  }
+
+  .third-section-flex{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .third-section-cols{
+    width: 75% !important;
+    margin: 10px 10px;
+  }
+
+  .width-25{
+    width: 30% !important;
+  }
+
+  .width-50{
+    width: 100% !important;
+  }
+
+  .nav-top{
+    text-align: center !important;
+    padding: 15px 30px !important;
+  }
+
+  .navbar{
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column !important; 
+    align-items: center;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .navbar-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+
+}
+
+
+
+body{
+  margin: 0px;
+}
+
+.primary-color{
+  color: #56be08;
+}
+
+.stick-top{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-top{
+  border-bottom: 1px solid lightgray;
+  margin: 0px;
+  padding: 15px 75px;
+  text-align: end;
+}
+
+.ifont{
+  font-family: "Icofont";
+}
+
+.span-text{
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.span-text:hover{
+  color: #56be08;
+}
+
+.span-icon{
+  color: #56be08;
+  font-size: 14px;
+}
+
+.link-login{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #56be08;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.icon-login{
+  color: white;
+}
+
+.link-login:hover{
+  color: white;
+  background-color: black;
+}
+
+.navbar{
+  padding: 10px 50px;
+  justify-content: center;
+  background-color: white;
+  z-index: 100;
+}
+
+.navbar-links{
+  display: flex;
+}
+
+.navbar-links a, .dropdown{
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-family: "Icofont";
+}
+
+.navbar-links a:hover, .dropdown:hover{
+  color: #56be08;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+.dropdown-content a {
+  float: none;
+  font-size: 16px;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #56be08;
+  z-index: 100;
+}
+
+.first-section{
+  margin: 0px;
+  background-color: #2d673c;
+  height: 400px;
+  z-index: -1;
+}
+
+.second-section, .third-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 0px;
+}
+
+.second-section p{
+  padding: 30px 0px;
+  text-align: center;
+  margin: 20px 140px;
+}
+
+.third-section-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.third-section-cols{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 20px;
+}
+
+.third-section-cols:hover{
+  color: #56be08;
+}
+
+.third-section-cols-icon{
+  font-size: 60px;
+}
+
+.fourth-section{
+  background-color: black;
+}
+
+.fourth-section img{
+  width: 175px;
+  height: 300px;
+}
+
+.primary-btn{
+  text-decoration: none;
+  color: white;
+  background-color: #56be08;
+  padding: 10px 15px;
+}
+
+.primary-btn:hover{
+  color: white;
+}
+
+.flex-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-footer{
+  background-color: #3a3a3a;
+  padding-top: 25px;
+}
+
+.footer-image{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: start;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.footer-end{
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.circle-icon{
+  background-color: #56be08;
+  padding: 0px 5px;
+  border-radius: 100%;
+  color: white;
+}
+
+.contact-section-icon{
+  background-color: #56be08;
+  padding: 5px 5px;
+  border-radius: 100%;
+  color: white;
+}
+
+.get-in-touch{
+  background-color: #212529;
+}
+
+.navbar-login{
+  padding: 20px 50px;
+}
+
+.login-forgot-password{
+  text-decoration: none;
+  color: #56be08;
+}
+
+.go-top-btn{
+  text-decoration: none;
+  color: white;
+  background-color: #212529;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 5px 10px;
+  opacity: 50%;
+}
+
+.div-form{
+  width: 50%;
+  padding: 20px;
+  margin: 50px 0px;
+  background-color: white;
+}
+
+.div-form-chkbox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.margin-same{
+  margin-left: 7vw;
+}

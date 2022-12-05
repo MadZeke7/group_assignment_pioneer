@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href="favicon2.png" rel="icon">
+
+  <title>Login</title>
+</head>
+<body class="bg-light">
+  <header class="bg-white">
+    <div class="navbar-login">
+      <img src="pioneer_logo.png" height="40px" width="150px">
+    </div>
+  </header>
+
+  <section class="d-flex justify-content-center">
+    <div class="div-form shadow ">
+      <form action="HomePage.html" method="GET">
+        <p class="fs-3 text-center py-3">Sign In</p>
+        <hr>
+
+        <div class="margin-same">
+          <input type="radio" id="username" name="login_type" value="Username" />
+          <span>Username &emsp;</span>
+          <input type="radio" id="mobile" name="login_type" value="Mobile"/>
+          <span>Mobile</span>
+        </div>
+
+        <br>
+        <label class = "margin-same">Username</label>
+        <input type="text" class="form-control w-75 margin-same" name="username"/>
+
+        <br>
+        <label class = "margin-same">Password</label>
+        <input type="password" class="form-control margin-same w-75" placeholder="Enter Password" name="password" /> 
+
+        <br>
+        <div class="div-form-chkbox w-75 margin-same">
+          <div>
+            <input type="checkbox" name="save">
+            <span>Remember Me</span>
+          </div>
+          <a href="HomePage.html" class="login-forgot-password">Forgot Password</a>
+        </div>
+
+        <br>
+        <input class="btn btn-primary w-75 margin-same py-3 mb-4" type="submit" value="Sign In"></input>
+
+      </form>
+    </div>
+    
+  </section>
+
+  <footer class="footer-login bg-black pt-5 pb-3 px-3 d-flex justify-content-end">
+    <a class="go-top-btn" href="#"> <span class="bx bx-chevron-up"></span> </a>
+    <hr class="text-secondary">
+  </footer>
+</body>
+</html>

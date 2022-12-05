@@ -1,0 +1,45 @@
+/* Sticky section up top */
+
+#sticky-bar{
+    justify-content: center;
+    padding: 12px 0px;
+}
+
+#navbar-section{
+    flex-direction: column;
+    height:auto;
+    gap:10px;
+}   
+
+#banner img{
+    height: 100px;
+}
+
+/* Main Body */
+
+#main-body{
+    padding: 50px 50px;
+}
+
+
+#main-body .navigator{
+    align-self: center;
+}
+
+#image-holder{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sub-image{
+    height: 130px;
+}
+
+
+/* Footer */
+
+#footer-connect{
+    display: flex;
+    flex-direction: column;
+}

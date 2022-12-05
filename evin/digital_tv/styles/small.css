@@ -1,0 +1,101 @@
+/* Sticky section up top */
+
+#sticky-bar{
+    justify-content: center;
+    padding: 12px 0px;
+}
+
+#navbar-section{
+    flex-direction: column;
+    height:auto;
+    gap:10px;
+}   
+
+#banner img{
+    height: 100px;
+}
+
+/* Section 1 - Delivery Features */
+
+#delivery-feature-grid{
+    flex-direction: column;
+    align-items: center;
+}
+
+#delivery-feature-grid .feature-item{
+    width:280px;
+    margin-bottom: 30px;
+}
+
+/* Section 2 - Smart TV */
+
+#smart-tv-feature-grid{
+    flex-direction: column;
+}
+
+/* Section 3 - Benefits to subscribers */
+
+#subscriber-benefits{
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+}
+
+#subscriber-benefits img{
+    width:300px;
+    height:auto;
+}
+
+/* Section 4 - TV Advantages */
+
+#tv-advantages #advantages-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#tv-advantages .advantage{
+    width:300px;    
+}
+
+/* Section 5 - Android Box */
+
+#android-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+#android-box #android-image{
+    width: 350px;
+}
+
+#android-features{
+    align-items: center;
+}
+
+#android-features-grid{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section 6 - Smart TV for Smart Audiences */
+
+#smart-audience-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section 8 - Customer Support */
+
+#customer-support{
+    flex-direction: column;
+}
+
+/* Footer */
+
+#footer-connect{
+    display: flex;
+    flex-direction: column;
+}
